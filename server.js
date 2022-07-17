@@ -5,7 +5,7 @@ const cors = require('cors');
 
 app.use(helmet());
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
 app.post("/", (req, res) => {
@@ -13,7 +13,7 @@ app.post("/", (req, res) => {
   console.log(post);
 });
 
-app.get("/", () => {
+app.get("/", (req,res) => {
   res.send("My Server");
 });
 
