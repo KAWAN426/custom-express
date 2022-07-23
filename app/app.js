@@ -8,15 +8,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
-const PORT = process.env.PORT || 8080;
+const home = require("./src/routes/home/home");
 
-app.post("/", (req, res) => {
-  const data = req.body;
-  console.log(data);
-});
+app.use("/",home);
 
-app.get("/", (req,res) => {
-  res.send("My Server");
-});
-
-app.listen(PORT,()=>{console.log(`Server on ${PORT} port`)});
+module.exports = app;
