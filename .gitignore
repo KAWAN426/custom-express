@@ -2,11 +2,7 @@ node_modules
 package-lock.json
 .env
 .vscode
-<<<<<<< HEAD
 .yarn
 .pnp.cjs
 .pnp.loader.mjs
 .yarnrc.yml
-=======
-.yarn
->>>>>>> 647cba679bc91df39204936410c68cf3abdb476d
