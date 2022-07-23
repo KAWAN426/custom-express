@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express();
 
-const ctrl = require("./home.ctrl");
+const {output,process} = require("./home.ctrl");
 
-router.post("/", ctrl.homePost);
-router.get("/", ctrl.homeGet);
+router.post("/", process.home);
+router.get("/", output.home);
 
 module.exports = router;
