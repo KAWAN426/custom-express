@@ -17,4 +17,4 @@ app.get("/", (req,res) => {
   res.send("My Server");
 });
 
-app.listen(process.env.PORT || 8080);
+app.listen(process.env.PORT || 8080,()=>{console.log(`Server on ${process.env.PORT || 8080} port`)});
