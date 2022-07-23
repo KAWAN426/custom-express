@@ -1,7 +1,7 @@
 const express = require('express');
 const helmet = require('helmet');
 const app = express();
-const cors = require('cors');
+// const cors = require('cors');
 
 app.use(helmet());
 app.use(express.json());
