@@ -13,7 +13,7 @@ if (cluster.isMaster) {
   });
 } else {
   const app = require("./src/app");
-  const PORT = process.env.PORT || 8080;
+  const PORT = process.env.PORT || 9000;
 
   console.log(`Worker ${process.pid} started`);
   app.listen(PORT, () => {
