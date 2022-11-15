@@ -9,7 +9,7 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "setYarnBerry":"npm install -g yarn && yarn set version berry && yarn install && yarn add @yarnpkg/sdks -D && yarn dlx @yarnpkg/sdks vscode"
   },
   "author": "",
   "license": "ISC",
