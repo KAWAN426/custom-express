@@ -5,6 +5,9 @@ const cors = require('cors');
 const compression = require('compression')
 const dotenv = require('dotenv');
 
+// const connectDB = require('./config/db');
+// connectDB();
+
 dotenv.config();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
