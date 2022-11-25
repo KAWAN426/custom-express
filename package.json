@@ -9,7 +9,7 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "setYarnBerry":"npm install -g yarn && yarn set version berry && yarn install && yarn add @yarnpkg/sdks -D && yarn dlx @yarnpkg/sdks vscode"
+    "setYarn2": "npm install -g yarn && yarn set version berry && yarn install"
   },
   "author": "",
   "license": "ISC",
