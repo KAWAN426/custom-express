@@ -14,14 +14,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cluster": "latest",
     "compression": "latest",
     "cors": "latest",
     "dotenv": "latest",
     "express": "latest",
     "express-async-handler": "latest",
-    "helmet": "latest",
-    "os": "latest"
+    "helmet": "latest"
   },
   "devDependencies": {
     "nodemon": "latest"
