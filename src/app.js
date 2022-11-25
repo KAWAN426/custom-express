@@ -4,11 +4,11 @@ const helmet = require('helmet');
 const cors = require('cors');
 const compression = require('compression')
 const dotenv = require('dotenv');
+dotenv.config();
 
 // const connectDB = require('./config/db');
 // connectDB();
 
-dotenv.config();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(helmet());
