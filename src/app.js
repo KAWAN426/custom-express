@@ -21,19 +21,4 @@ const data = require("./routes/api/data/index");
 app.use("/", home);
 app.use("/api/data", data);
 
-// 성능 체크
-// npm i -g loadtest
-// loadtest http://localhost:9000/api/testcluster -n 1000 -c 100
-app.get('/api/testcluster', function (req, res) {
-  console.time('noclusterApi');
-  const base = 8;
-  let result = 0;
-  for (let i = Math.pow(base, 7); i >= 0; i--) {
-    result += i + Math.pow(i, 10);
-  };
-  console.timeEnd('noclusterApi');
-  console.log(`RESULT IS ${result} - ON PROCESS ${process.pid}`);
-  res.send(`Result number is ${result}`);
-});
-
 module.exports = app;
